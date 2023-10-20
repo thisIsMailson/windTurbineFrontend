@@ -1,13 +1,12 @@
 'use client';
 
-import React, { createContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import DataDisplay from './components/dataDisplay';
 import { get } from 'http';
 import axios from 'axios';
 import VariableChart from './components/variableChart';
 import SelectComponent from './components/selectComponent';
 import StatusDisplay from './components/statusDisplay';
-export const AppContext = createContext('')
 
 const Home = () => {
   const [stats, setStats] = useState(null);

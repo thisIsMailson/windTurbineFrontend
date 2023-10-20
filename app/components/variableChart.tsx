@@ -3,7 +3,7 @@ import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 
-const VariableChart = ({ data }) => {
+const VariableChart = ({ data }: any) => {
     return (
         <div>
             <h2>Time-Series Data</h2>

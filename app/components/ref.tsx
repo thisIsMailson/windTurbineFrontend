@@ -1,8 +1,8 @@
 import { useState, useRef, useContext } from "react"
-import { AppContext } from "../page"
+// import { AppContext } from "../page"
 
 export const Ref = () => {
-    const user = useContext(AppContext)
+    // const user = useContext(AppContext)
     const [count, setCount] = useState(0)
     const countRef = useRef(0)
     const handleIncrement = () => {
@@ -11,7 +11,7 @@ export const Ref = () => {
     }
     return <div className="ref-hello">
         <div>
-            Count: {count} from user {user}
+            {/* Count: {count} from user {user} */}
         </div>
         <button onClick={handleIncrement} >Increment count</button>
     </div >
