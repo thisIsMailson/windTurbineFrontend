@@ -67,9 +67,22 @@ body {
   border-style: 1px solid;
 } */
 
+.data-button {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 16px;
+  width: 100%;
+  cursor: pointer;
+}
 .info-grid {
   display: flex;
   flex-direction: row;
+  > .first-div, .second-div { 
+    width: 50vw;
+  }
   > div {
     margin-right: 10px;
   }
@@ -99,3 +112,34 @@ body {
 }
 
 /* You can further customize the styles based on your design preferences */
+
+/* DateSelector.css */
+.data-picker{
+  width: 120px;
+}
+.toggle-button {
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: #0073e6;
+  color: #fff; 
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-icon {
+  font-size: 20px;
+}
