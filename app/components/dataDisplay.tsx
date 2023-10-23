@@ -28,7 +28,7 @@ const DataDisplay = ({ data }: DataDisplayProps) => {
 
     return (
         <div className='data-card'>
-            <h2>Data Summary</h2>
+            <h2>Indicator's Data Summary by Variable</h2>
             <table>
                 <thead>
                     <tr>
