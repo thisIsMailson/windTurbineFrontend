@@ -14,14 +14,12 @@ const user = {
 export async function GET(req: NextRequest) {
   const body = await req.json();
 
-  console.log('bod bod: ', body);
   return NextResponse.json(user);
 }
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
 
-  console.log('bod bod: ', body);
 
   return NextResponse.json(user);
 

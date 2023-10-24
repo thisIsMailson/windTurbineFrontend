@@ -8,7 +8,6 @@ export async function GET(req: NextRequest) {
       timestamp: req.nextUrl.searchParams.get('start_date'),
     },
   });
-  console.log('data ===>', data.data);
 
   return NextResponse.json(data.data);
 }

@@ -9,6 +9,6 @@ export async function GET(req: NextRequest) {
       end_date: req.nextUrl.searchParams.get('end_date'),
     },
   });
-  console.log('data ===>', data.data);
+
   return NextResponse.json(data.data);
 }

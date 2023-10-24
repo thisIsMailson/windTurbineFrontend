@@ -5,9 +5,10 @@ import 'react-datepicker/dist/react-datepicker.css';
 
 interface DateSelectorProps {
     onSubmit: (start: Date, end: Date | null) => void;
+    loading: boolean;
 }
 
-const DateSelector: React.FC<DateSelectorProps> = ({ onSubmit }) => {
+const DateSelector: React.FC<DateSelectorProps> = ({ onSubmit, loading }) => {
     const [startDate, setStartDate] = useState<Date | null>(null);
     const [endDate, setEndDate] = useState<Date | null>(null);
     const [singleDateMode, setSingleDateMode] = useState<boolean>(false);
@@ -67,10 +68,10 @@ const DateSelector: React.FC<DateSelectorProps> = ({ onSubmit }) => {
                     </>
                 )}
                 <div>
-
-                    <div className="submit-button" onClick={handleSubmit}>
+                    {!loading ? (<div className="submit-button" onClick={handleSubmit}>
                         <div className="arrow-icon">{`->`}</div>
-                    </div>
+                    </div>) : <div className="loading-spinner"></div>}
+
                 </div>
             </div>
         </div>
